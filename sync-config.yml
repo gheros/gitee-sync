@@ -3,7 +3,7 @@ repositories:
   - name: "project-a-sync"  # 示例：同步一个主分支的项目
     gitee:
       # Gitee 仓库完整地址
-      repo_url: "https://gitee.com/xxx/project-a.git"
+      repo_url: "https://gitee.com/moheng_blockchain/github-sync.git"
       # 要同步的源分支
       branch: "master"
     github:
@@ -12,15 +12,6 @@ repositories:
       # GitHub 目标分支名称（可选，默认与 Gitee 分支相同）
       branch: "main"
       # 是否为私有仓库
-      private: false
-
-  - name: "project-b-sync"  # 示例：同步一个开发分支的私有项目
-    gitee:
-      repo_url: "https://gitee.com/xxx/project-b.git"
-      branch: "develop"
-    github:
-      repo_name: "project-b-private"
-      branch: "develop"
       private: true
 
 
